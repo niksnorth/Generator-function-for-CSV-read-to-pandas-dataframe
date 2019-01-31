@@ -25,5 +25,10 @@ for row in iter_data:
     df2=df2.T
     df = df.append(df2)
 	
+index2=pd.Index(range(0, len(df['id'])))
+df.set_index(index2, inplace=True)
 print(df.head())
+
 print(df.tail())
+
+print(df['name'].tail())
