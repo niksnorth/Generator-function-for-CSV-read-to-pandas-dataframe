@@ -30,5 +30,3 @@ df.set_index(index2, inplace=True)
 print(df.head())
 
 print(df.tail())
-
-print(df['name'].tail())
