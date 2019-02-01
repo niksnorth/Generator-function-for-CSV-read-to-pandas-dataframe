@@ -12,11 +12,10 @@ def get_data(csv_fname, chunk_size=1000000):
 
 filename = "airports2.csv"
 iter_data = iter(get_data(filename, 1000000))
-next(iter_data)  # Skipping the column names
 
-cols='id ident type name latitude_deg longitude_deg elevation_ft continent iso_country iso_region municipality scheduled_service gps_code iata_code local_code home_link wikipedia_link keywords'
-col=cols.split()
-print(col)
+colks= next(iter_data)  # Skipping the column names
+colk = list(colks)
+print(colk)
 
 df = pd.DataFrame()
 
